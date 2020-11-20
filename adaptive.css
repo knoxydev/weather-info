@@ -123,14 +123,14 @@
 		width: 250px;
 		font-size: 18pt;
 		letter-spacing: 1px;
-		padding: 10px;
+		padding: 8px;
 	}
 	#header-search-input {
 		width: 220px;
 		padding: 6px;
 		font-size: 14pt;
 	}
-	.temp-main-block {width: 420px;}
+	.temp-main-block {width: 420px; padding: 4px;}
 	#search-city-name {
 		font-size: 16pt;
 		letter-spacing: 0px;
@@ -148,27 +148,28 @@
 	}
 	.temp-main-block > div:nth-of-type(2) div:nth-of-type(1) {font-size: 20pt;}
 	.temp-main-block > div:nth-of-type(1) {font-size: 18pt;}
-	.temp-main-block {width: 400px;}
+	.temp-main-block {width: 360px;}
 	.temp-list {
-		width: 400px;
-		padding: 6px;
+		width: 360px;
+		padding: 4px;
 		font-size: 14pt;
 		margin-top: -2px;
 	}
 	.temp-list > div div {padding: 6px;}
 	.temp-recommendation-name {font-size: 14pt;}
 	.temp-recommendation-block {
-		width: 400px;
+		width: 360px;
 		border: 2px solid white;
 		font-size: 14pt;
 	}
 	.temp-recommendation-block > div:nth-of-type(1) div {
-		padding-left: 6px;
+		padding: 8px;
+		padding-left: 2px;
 		font-size: 14pt;
 		letter-spacing: 0px;
 	}
 	.temp-recommendation-block > div:nth-of-type(2) div {
-		width: 170px;
+		width: 150px;
 		padding: 8px;
 		font-size: 14pt;
 		letter-spacing: 0px;
