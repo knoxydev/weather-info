@@ -49,4 +49,66 @@
 	}
 }
 
+@media screen and (max-width: 500px) {
+	.header-block {
+		padding: 10px;
+		border-bottom: 3px solid #cccccc;
+	}
+	.header-block > div:nth-of-type(1) {
+		width: 250px;
+		font-size: 18pt;
+		letter-spacing: 1px;
+		padding: 10px;
+	}
+	#header-search-input {
+		width: 250px;
+		padding: 8px;
+		font-size: 14pt;
+	}
+	.temp-main-block {width: 420px;}
+	#search-city-name {
+		font-size: 16pt;
+		letter-spacing: 1px;
+	}
+	#header-search-button-units {
+		padding: 8px;
+		width: 70px;
+		font-size: 14pt;
+	}	
+	#header-search-button {
+		letter-spacing: 1px;
+		width: 90px;
+		padding: 8px;
+		font-size: 14pt;
+	}
+	.temp-main-block > div:nth-of-type(2) div:nth-of-type(1) {font-size: 22pt;}
+	.temp-list {
+		width: 420px;
+		padding: 6px;
+		font-size: 16pt;
+		margin-top: -2px;
+	}
+	.temp-list > div div {padding: 8px;}
+	.temp-recommendation-name {font-size: 16pt;}
+	.temp-recommendation-block {
+		width: 420px;
+		border: 2px solid white;
+		font-size: 14pt;
+	}
+	.temp-recommendation-block > div:nth-of-type(1) div {
+		padding-left: 6px;
+		font-size: 14pt;
+	}
+	.temp-recommendation-block > div:nth-of-type(2) div {
+		width: 160px;
+		padding: 8px;
+		font-size: 14pt;
+	}
+	#temp-recommendation-update-btn {
+		width: 240px;
+		font-size: 16pt;
+		letter-spacing: 1px;
+	}
+}
+
 
