@@ -29,14 +29,25 @@ input:focus {outline: none;}
 	flex-wrap: wrap;
 }
 .header-block > div:nth-of-type(1) {
-	width: 250px;
 	font-size: 24pt;
 	color: white;
 	letter-spacing: 2px;
-	border: 2px solid transparent;
 	text-align: center;
 	padding: 10px;
 	user-select: none;
+	display: inline-block;
+}
+.header-block > div:nth-of-type(1) i {
+	font-size: 26pt;
+	color: transparent;
+	transform: translateX(-30px);
+	position: absolute;
+}
+
+.header-block > div:nth-of-type(1):hover i {
+	transform: translateX(0px);
+	color: white;
+
 }
 
 .header-search-block {
@@ -195,7 +206,7 @@ input:focus {outline: none;}
 	user-select: none;
 }
 .temp-recommendation-block > div:nth-of-type(2) div {
-	width: 200px;
+	
 	padding: 8px;
 	background: transparent;
 	text-align: right;
