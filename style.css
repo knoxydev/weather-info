@@ -40,7 +40,7 @@ input:focus {outline: none;}
 	display: inline-block;
 }
 
-svg {
+/*svg {
 	width: 40px;
 	height: 40px;
 	transform: translateX(-35px);
@@ -50,6 +50,34 @@ svg path {fill: transparent; stroke: transparent;}
 .header-block > div:nth-of-type(1):hover svg {transform: translateX(0px);}
 .header-block > div:nth-of-type(1):hover svg path {
 	fill: transparent;
+	stroke: white;
+}
+*/
+
+/*#weather-name {
+	fill: white;
+	border: 2px solid red;
+}*/
+
+#weather-icon-block {
+	
+}
+
+#weather-icon-path-1,
+#weather-icon-path-2,
+#weather-icon-path-3,
+#weather-icon-path-4,
+#weather-icon-path-5,
+#weather-icon-path-6 {
+	stroke: transparent;
+}
+
+#weather-icon-block:hover #weather-icon-path-1,
+#weather-icon-block:hover #weather-icon-path-2,
+#weather-icon-block:hover #weather-icon-path-3,
+#weather-icon-block:hover #weather-icon-path-4,
+#weather-icon-block:hover #weather-icon-path-5,
+#weather-icon-block:hover #weather-icon-path-6 {
 	stroke: white;
 }
 
@@ -189,12 +217,12 @@ svg path {fill: transparent; stroke: transparent;}
 	padding: 8px;
 	border: 2px solid white;
 	font-size: 18pt;
-	background: #333333;
-	color: white;
+	background: white;
+	color: black;
 	border-radius: 6px;
 	letter-spacing: 2px;
 }
-#temp-recommendation-update-btn:hover {background: white; color: black;}
+#temp-recommendation-update-btn:hover {background: #333333; color: white;}
 
 .temp-recommendation-block > div:nth-of-type(1) div {
 	padding: 8px;
