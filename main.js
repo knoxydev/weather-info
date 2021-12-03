@@ -63,8 +63,8 @@ let base = {
 base.tempRecommend();
 
 document.getElementById("header-search-button").addEventListener("click", (e) => {
-	let searchTown = document.getElementById("header-search-input").value;
-	base.searchCity = searchTown;
+	base.searchCity = document.getElementById("header-search-input").value;
+	document.getElementById("header-search-input").value = "";
 	base.mainRequest();
 	base.getCountry();
 });
@@ -73,8 +73,7 @@ document.getElementById("header-search-button-units").addEventListener("click", 
 	if (base.int % 2 == 0) {
 		document.getElementById("header-search-button-units").innerHTML = "&deg;F";
 		base.unit = "F";
-	}
-	else {
+	} else {
 		document.getElementById("header-search-button-units").innerHTML = "&deg;C";
 		base.unit = "C";
 	}
@@ -82,5 +81,3 @@ document.getElementById("header-search-button-units").addEventListener("click", 
 });
 
 document.getElementById("temp-recommendation-update-btn").addEventListener("click", (e) => base.tempRecommend());
-
-
