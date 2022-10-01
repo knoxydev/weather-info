@@ -1,59 +1,3 @@
-@import 'blocks/fonts.css';
-body {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  background: #252525;
-}
-* {transition: 0.3s ease-in-out; font-family: 'Montserrat', sans-serif;}
-button:focus {outline: none;}
-input:focus {outline: none;}
-
-button {transform: translateY(0px); transition: 0.2s ease-in-out;}
-button:active {transform: translateY(10px);}
-
-::-webkit-input-placeholder {color: #999999;} /* WebKit browsers */
-:-moz-placeholder { color: #999999;} /* Mozilla Firefox 4 to 18 */
-::-moz-placeholder {color: #999999;} /* Mozilla Firefox 19+ */
-:-ms-input-placeholder {color: #999999;} /* Internet Explorer 10+ */
-
-::-webkit-scrollbar {background: transparent; width: 8px;}
-::-webkit-scrollbar-thumb {background: rgba(255, 255, 255, 0.2); border-radius: 0px;}
-::-webkit-scrollbar-track-piece {background: transparent;}
-
-.glav-block {background: #181818; color: black;}
-.header-block {
-	background: #181818;
-	padding: 12px;
-
-	top: 0px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-.header-block > div:nth-of-type(1) {
-	font-size: 24pt;
-	color: white;
-	letter-spacing: 2px;
-	text-align: center;
-	padding: 10px;
-	user-select: none;
-	display: inline-block;
-}
-
-#weather-icon-path-1,
-#weather-icon-path-2,
-#weather-icon-path-3,
-#weather-icon-path-4,
-#weather-icon-path-5,
-#weather-icon-path-6 {stroke: transparent;}
-
-#weather-icon-block:hover #weather-icon-path-1,
-#weather-icon-block:hover #weather-icon-path-2,
-#weather-icon-block:hover #weather-icon-path-3,
-#weather-icon-block:hover #weather-icon-path-4,
-#weather-icon-block:hover #weather-icon-path-5,
 #weather-icon-block:hover #weather-icon-path-6 {stroke: white;}
 
 .header-search-block {
@@ -102,14 +46,15 @@ button:active {transform: translateY(10px);}
 #header-search-button-units:hover {background: transparent; color: white;}
 
 #search-city-name {
-	font-size: 20pt;
+	font-size: 18pt;
 	letter-spacing: 2px;
 	padding: 8px;
 	text-align: center;
 	color: white;
+	display: none;
 }
 
-.temp-list-block {text-align: center; margin-bottom: 6px;}
+.temp-list-block {text-align: center; margin-bottom: 6px; display: none;}
 .temp-main-block {
 	margin-right: auto;
   margin-left: auto;
@@ -179,7 +124,7 @@ button:active {transform: translateY(10px);}
 	border-radius: 12px;
 	background: white;
 
-	display: flex;
+	display: none;
 	flex-direction: row;
 	justify-content: space-between;
 }
@@ -188,13 +133,14 @@ button:active {transform: translateY(10px);}
 	text-align: center;
 	letter-spacing: 1px;
 	color: white;
+	display: none;
 }
 
 #temp-recommendation-update-btn {
 	width: 300px;
 	margin-right: auto;
   margin-left: auto;
-	display: block;
+	display: none;
 	padding: 8px;
 	border: 2px solid white;
 	font-size: 18pt;
