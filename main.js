@@ -3,9 +3,9 @@ let base = {
 	idKeyTwo		: "a6ef7ec1f6c949ab82e7f582bac77c48",
 	searchCity 	: "none",
 	tempUnits 	: "metric",
-	info				: 0,
-	infoTwo			: 0,
-	int 				: 0,
+	info				: Number(0),
+	infoTwo			: Number(0),
+	int 				: Number(0),
 	unit 				: "C",
 	colors			: ["crimson", "tomato", "goldenrod", "springgreen", "lightgreen", "palegreen", "mediumspringgreen", "mediumslateblue", "salmon", "turquoise"],
 
@@ -62,11 +62,19 @@ let base = {
 
 base.tempRecommend();
 
-document.getElementById("header-search-button").addEventListener("click", (e) => {
+document.getElementById("header-search-button").addEventListener("click", async (e) => {
+	document.querySelector(".header-block").style = "transform: translateY(0px)";
+
 	base.searchCity = document.getElementById("header-search-input").value;
 	document.getElementById("header-search-input").value = "";
-	base.mainRequest();
-	base.getCountry();
+	await base.mainRequest();
+	await base.getCountry();
+
+	document.getElementById("search-city-name").style.display = "block";
+	document.querySelector(".temp-list-block").style.display = "block";
+	document.querySelector(".temp-recommendation-block").style.display = "flex";
+	document.querySelector(".temp-recommendation-name").style.display = "block";
+	document.getElementById("temp-recommendation-update-btn").style.display = "block";
 });
 
 document.getElementById("header-search-button-units").addEventListener("click", (e) => {
