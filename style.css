@@ -1,3 +1,62 @@
+@import 'blocks/fonts.css';
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  background: #181818;
+}
+* {transition: 0.3s ease-in-out; font-family: 'Montserrat', sans-serif;}
+button:focus {outline: none;}
+input:focus {outline: none;}
+
+button {transform: translateY(0px); transition: 0.2s ease-in-out;}
+button:active {transform: translateY(10px);}
+
+::-webkit-input-placeholder {color: #999999;} /* WebKit browsers */
+:-moz-placeholder { color: #999999;} /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder {color: #999999;} /* Mozilla Firefox 19+ */
+:-ms-input-placeholder {color: #999999;} /* Internet Explorer 10+ */
+
+::-webkit-scrollbar {background: transparent; width: 8px;}
+::-webkit-scrollbar-thumb {background: rgba(255, 255, 255, 0.2); border-radius: 0px;}
+::-webkit-scrollbar-track-piece {background: transparent;}
+
+.glav-block {background: #181818; color: black;}
+.header-block {
+	background: #181818;
+	padding: 12px;
+	transform: translateY(40px);
+
+	top: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	transition: 0.3s ease-out;
+}
+.header-block > div:nth-of-type(1) {
+	font-size: 24pt;
+	color: white;
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 10px;
+	user-select: none;
+	display: inline-block;
+}
+
+#weather-icon-path-1,
+#weather-icon-path-2,
+#weather-icon-path-3,
+#weather-icon-path-4,
+#weather-icon-path-5,
+#weather-icon-path-6 {stroke: transparent;}
+
+#weather-icon-block:hover #weather-icon-path-1,
+#weather-icon-block:hover #weather-icon-path-2,
+#weather-icon-block:hover #weather-icon-path-3,
+#weather-icon-block:hover #weather-icon-path-4,
+#weather-icon-block:hover #weather-icon-path-5,
 #weather-icon-block:hover #weather-icon-path-6 {stroke: white;}
 
 .header-search-block {
